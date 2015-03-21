@@ -1,0 +1,19 @@
+{
+  "name": "2801.so",
+  "version": "0.0.1",
+  "description": "an open source search engine",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lolzorz/2801.so.git"
+  },
+  "author": "S.L. Zhong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolzorz/2801.so/issues"
+  },
+  "homepage": "https://github.com/lolzorz/2801.so"
+}
