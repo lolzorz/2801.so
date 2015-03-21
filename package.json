@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lolzorz/2801.so/issues"
   },
-  "homepage": "https://github.com/lolzorz/2801.so"
+  "homepage": "https://github.com/lolzorz/2801.so",
+  "dependencies": {
+    "request": "^2.53.0"
+  }
 }
