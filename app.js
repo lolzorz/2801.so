@@ -1,8 +1,8 @@
-var Spider = require('./Spider')
-  , Earthworm = require('./Earthworm')
+var Spider = require('./controllers/Spider')
+  , Earthworm = require('./controllers/Earthworm')
 
-Earthworm.in('http://www.baidu.com')
-Earthworm.in('http://www.hao123.com')
-Earthworm.in('http://www.360.com')
+Earthworm.enqueue('http://www.baidu.com')
+// Earthworm.enqueue('http://www.hao123.com')
+// Earthworm.enqueue('http://www.360.com')
 
 Spider.init(Earthworm)

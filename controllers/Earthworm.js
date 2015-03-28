@@ -2,11 +2,11 @@ var body = []
 
 exports.instance = body
 
-exports.in = function (url) {
+exports.enqueue = function (url) {
   body.push(url)
 }
 
-exports.out = function () {
+exports.dequeue = function () {
   return body.splice(0, 1)[0]
 }
 
