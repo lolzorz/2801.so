@@ -6,7 +6,7 @@ var Earthworm
 
 function extract (a) {
   for (var i in a) {
-    if (parseInt(i) >= 0 && a[i].attribs.href.substring(0, 4) == 'http') {
+    if (a[i].attribs && a[i].attribs.href && a[i].attribs.href.substring(0, 4) == 'http') {
       Earthworm.enqueue(a[i].attribs.href)
     }
   }
