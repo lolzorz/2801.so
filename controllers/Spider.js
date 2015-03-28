@@ -23,8 +23,8 @@ var pool = {
       this.size++
     } 
   },
-  destroy : function () {
-
+  destroy : function (url) {
+    delete this.urls[url]
   },
   full : function () {
     return this.size >= this.maxSize
@@ -37,8 +37,11 @@ function crawl (url) {
   request(url, function (err, res, body) {
     if (!err && res.statusCode == 200) {
       Cricket.analyze(body)
+      pool.destroy(url)
       if (!Earthworm.empty()) {
         crawl(Earthworm.dequeue())
+      } else {
+        pool.status = 'free'
       }
     } else {
 
